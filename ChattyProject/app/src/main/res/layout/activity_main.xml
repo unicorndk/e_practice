@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/activity_main">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/send_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@drawable/ic_send_button"
+        android:tint="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        app:fabSize="normal"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_field"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/send_button"
+        android:layout_margin="10dp"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/text_area"
+            android:hint="Введите сообщение..." />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/text_field"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/messages_recycler"/>
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
